@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+.mainstand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainstand h1{
+    color: white;
+    font-size: 42px;
+}
+.fontg p{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.gallery img{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+}
+.gallery {
+    
+    padding: 20px;
+    align-items: center;
+}
+.button {
+    padding: 10px 25px;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    background: url(https://wallpapersmug.com/download/1920x1080/5a6af1/gradient-yellow-pink-colors.jpg);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.button:hover {
+    transform: scale(1.05);
+}
+.button:active {
+    transform: scale(1.02);
+}

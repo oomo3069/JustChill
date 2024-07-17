@@ -1,0 +1,311 @@
+
+
+body{
+    height: 130vh;
+    background-color: #222224;
+    background: url(https://wallpapersmug.com/download/1920x1080/5a6af1/gradient-yellow-pink-colors.jpg) no-repeat center center ;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    
+}
+a:hover{
+    transition: 1.5s;
+    color: #000000;
+}
+li{
+    list-style: none;
+}
+header{
+    position: relative;
+    padding: 0.5px;
+}
+.NavBar{
+    width: 100%;
+    height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 9px;
+
+    
+}
+.LOGO{
+    display: flex;
+     align-items: center;
+     height: 40px;
+     /* backdrop-filter: blur(10px);
+     background-color: rgba(255, 255, 255, 0.4);  */
+     padding-right: 10px;
+     
+}
+.LOGO a{
+    margin-left: 20px;
+   font-size: 26px;
+    font-weight: bold;
+    
+}
+
+.LOGO img{
+    height: 40px;
+}
+.NavBar .Link{
+  border-radius: 7px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+   background-color: rgba(255, 255, 255, 0.4); 
+    font-size: 18px;
+    display: flex;
+    gap: 2rem; /*ทำให้ตัวหนังสือเรียงกันเเนวนอน*/
+    
+    
+}
+    hr{
+        width: 1000px;
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: -120px;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ff09ff 0%,
+    #dd03ff 29%,
+    #ff7332 67%,
+    #f7ff60 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+      font-size: 74px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.ptext{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 42px;
+}
+
+.boxm{
+    display: flex;
+    justify-content: center;
+}
+#a{
+  background: url(bth.png);
+}
+#b{
+background: url(imsr.png);
+}
+#c{
+background: url(lan.png);
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 12px;
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s box-shadow;
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+ .box:hover::before, .box:hover::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 205px;
+    height: 205px;
+    background: #FDA8CF;
+    border-radius: 20px;
+    z-index: -1;
+    animation: 3s clockwise infinite;
+  }
+  
+  .box:hover:after {
+    background: #F3CE5E;
+    animation: 3s counterclockwise infinite;
+  }
+  
+  @keyframes clockwise {
+    0% {
+      top: -5px;
+      left: 0;
+    }
+    12% {
+      top: -2px;
+      left: 2px;
+    }
+    25% {
+      top: 0;
+      left: 5px;    
+    }
+    37% {
+      top: 2px;
+      left: 2px;
+    }
+    50% {
+      top: 5px;
+      left: 0;    
+    }
+    62% {
+      top: 2px;
+      left: -2px;
+    }
+    75% {
+      top: 0;
+      left: -5px;
+    }
+    87% {
+      top: -2px;
+      left: -2px;
+    }
+    100% {
+      top: -5px;
+      left: 0;    
+    }
+  }
+  
+  @keyframes counterclockwise {
+    0% {
+      top: -5px;
+      right: 0;
+    }
+    12% {
+      top: -2px;
+      right: 2px;
+    }
+    25% {
+      top: 0;
+      right: 5px;    
+    }
+    37% {
+      top: 2px;
+      right: 2px;
+    }
+    50% {
+      top: 5px;
+      right: 0;    
+    }
+    62% {
+      top: 2px;
+      right: -2px;
+    }
+    75% {
+      top: 0;
+      right: -5px;
+    }
+    87% {
+      top: -2px;
+      right: -2px;
+    }
+    100% {
+      top: -5px;
+      right: 0;    
+    }
+  }
+@media only screen and (max-width: 1200px) {
+  .NavBar{
+    max-width: 500px; 
+  }
+  hr{
+        width:600px;
+    }
+}
+@media only screen and (max-width: 600px) {
+  hr{
+    width:390px;
+}
+.NavBar {
+  
+  flex-direction: column;
+  align-items: flex-end; /* เปลี่ยนเป็น flex-end เพื่อจัดให้อยู่ทางขวา */
+}
+
+.NavBar .Link {
+  z-index: 1000;
+  display: none;
+  align-items: center;
+
+  flex-direction: column;
+  width: 100%;
+}
+
+#menu-toggle:checked + .NavBar .Link {
+  display: flex;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-left: auto ; 
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Optional: Animation for the menu toggle button */
+#menu-toggle:checked + .NavBar .menu-toggle div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+#menu-toggle:checked + .NavBar .menu-toggle div:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + .NavBar .menu-toggle div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.box{
+  height: 200px;
+}
+.box:hover::before, .box:hover::after {
+  width: 140px;
+  height: 160px;
+}
+.animate-charcter{
+  font-size: 64px;
+}
+.ptext{
+  font-size: 38px;
+}
+}
